@@ -1,5 +1,3 @@
-<p align="center"> <img src="https://www.php.net/images/logos/php-logo.svg" alt="PHP Logo" height="80" /> </p>
-
 ## 🧠 PHP POO
 Repositório dedicado à prática de Programação Orientada a Objetos (POO) em PHP, com exercícios baseados no curso do [Curso em Vídeo](https://www.cursoemvideo.com/curso/php-poo/) ministrado pelo professor Gustavo Guanabara. 
 
