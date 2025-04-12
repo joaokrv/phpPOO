@@ -1,7 +1,44 @@
-<p align="center"> <img src="https://www.php.net/images/logos/php-logo.svg" alt="PHP Logo" height="80" /> </p>
-
 ## 🧠 PHP POO
 Repositório dedicado à prática de Programação Orientada a Objetos (POO) em PHP, com exercícios baseados no curso do [Curso em Vídeo](https://www.cursoemvideo.com/curso/php-poo/) ministrado pelo professor Gustavo Guanabara. 
+
+
+## 🚀 Tecnologias Utilizadas
+
+- PHP
+- HTML
+- Servidor local (XAMPP, WAMP ou outro)
+
+## 📌 Como executar os exercícios localmente
+
+Para rodar os exercícios em seu computador, siga as instruções abaixo:
+
+1. **Instale um servidor local**  
+   - [XAMPP](https://www.apachefriends.org/pt_br/index.html) (recomendado)  
+   - [WAMP](https://www.wampserver.com/en/)
+
+2. **Verifique se o PHP está instalado**  
+   Certifique-se de que o PHP está instalado corretamente.
+
+3. **Escolha um editor de código**  
+   Recomendamos o uso de editores como:  
+   - **[Visual Studio Code](https://code.visualstudio.com/)** (recomendado)  
+   - **[Sublime Text](https://www.sublimetext.com/)**  
+   - **[PHPStorm](https://www.jetbrains.com/phpstorm/)**  
+
+4. **Movimente os arquivos para o diretório do servidor**  
+   No XAMPP, coloque a pasta do repositório em:  
+   `C:\xampp\htdocs\php`
+
+5. **Inicie o servidor Apache**  
+   No XAMPP, inicie o Apache.
+
+6. **Clone o repositório**  
+   Execute o seguinte comando no terminal:
+   ```bash
+   git clone git@github.com:joaokrv/phpPOO.git
+Acesse pelo navegador
+Abra o navegador e entre com o endereço:
+http://localhost/php
 
 ---
 
