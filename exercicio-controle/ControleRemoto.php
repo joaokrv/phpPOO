@@ -40,7 +40,7 @@
         // Implementando Métodos a interface Controlador
         public function ligar() {
             $this->setLigado(true);
-            echo "Controle remoto ligado!<br>";
+            echo "<strong>Controle remoto ligado!</strong><br>";
         }
         
         public function desligar() {
@@ -51,7 +51,7 @@
         public function pause() {
             if ($this->getTocando() == true) {
                 $this->setTocando(false);
-                echo "Pausando...<br>";
+                echo "<strong>Pausando...</strong><br>";
             } else {
                 echo "Erro! Não tem nada tocando.<br>";
             }
@@ -64,19 +64,28 @@
                 echo "Erro! Já está tocando.<br>";
             }
         }
-        
+
         public function abrirMenu() {
-            echo "<br>Ligado: " . ($this->getLigado() ? "Sim" : "Não");
-            echo "<br>Tocando: " . ($this->getTocando() ? "Sim" : "Não");
-            for ($i = 0; $i <= $this->getVolume(); $i += 10) {
-                echo " | ";
-            }
-            echo "<br>Volume: " . $this->getVolume() . "<br>";
-            echo "<br>Menu aberto!<br>";
+            echo '<div class="menu-box">';
+                    
+            echo "<br><strong>Menu aberto!</strong><br>";
+
+            echo "<p><br>Ligado: " . ($this->getLigado() ? "Sim" : "Não" ) . "</p>";
+            echo "<p><br>Tocando: " . ($this->getTocando() ? "Sim" : "Não") . "</p>";
+        
+            $volumePercentual = $this->getVolume();
+            echo '<br>Volume: ' . $volumePercentual . '%';
+            echo '
+                <div class="volume-bar">
+                    <div class="volume-fill" style="width: ' . $volumePercentual . '%;"></div>
+                </div>
+            ';
+
+            echo '</div>';
         }
         
         public function fecharMenu() {
-            echo "<br>Fechando menu...";
+            echo "<br><strong>Fechando menu...</strong><br>";
         }
         
         public function maisVolume() {
