@@ -1,10 +1,10 @@
 <?php 
-
 class ContaBancaria {
+
     // Atributos
-    private $numConta;
-    private $tipo;
-    private $dono;
+    public $numConta;
+    protected $tipo;
+    private $dono = null; // Cliente
     private $saldo;
     private $status;
 
@@ -51,6 +51,74 @@ class ContaBancaria {
     }
     public function setStatus($status){
         $this->status = $status;
+    }
+
+    // Métodos
+
+    public function abrirConta($tipo) {
+        $this->setTipo($tipo);
+        $this->setStatus(true);
+        if ($tipo == "CC") {
+            $this->setSaldo(50);
+        } elseif ($tipo == "CP") {
+            $this->setSaldo(150);
+        }
+        echo "Conta de {$this->getTipo()} aberta com sucesso para {$this->getDono()}!<br>";
+    }
+
+    public function fecharConta() {
+        if ($this->getSaldo() > 0) {
+            echo "Conta não pode ser fechada, saldo positivo!<br>";
+        } elseif ($this->getSaldo() < 0) {
+            echo "Conta não pode ser fechada, saldo negativo!<br>";
+        } else {
+            $this->setStatus(false);
+            echo "Conta de {$this->getDono()} fechada com sucesso!<br>";
+        }
+    }
+
+    public function depositar($valor) {
+        if ($this->getStatus() == true) {
+            if ($valor > 0) {
+                $this->setSaldo($this->getSaldo() + $valor);
+                echo "Depósito de R$ {$valor} realizado com sucesso!<br>";
+            } else {
+                echo "Valor inválido para depósito!<br>";
+            }
+        } else {
+            echo "Conta fechada, não é possível depositar!<br>";
+        }
+    }
+
+    public function sacar($valor) {
+        if ($this->getStatus() == true) {
+            if ($this->getSaldo() > 0) {
+                $this->setSaldo($this->getSaldo() - $valor);
+                echo "Saque de {$valor} realizado com sucesso!<br>";
+            } else {
+                echo "Saldo insuficiente para saque!<br>";
+            }
+        } else {
+            echo "Conta fechada, não é possível sacar!<br>";
+        }
+    }
+
+    public function pagarMensal() {
+        if ($this->getTipo() == "CC") {
+            $valor = 12;
+        } elseif ($this->getTipo() == "CP") {
+            $valor = 20;
+        }
+        if ($this->getStatus() == true) {
+            if ($this->getSaldo() > 0) {
+                $this->setSaldo($this->getSaldo() - $valor);
+                echo "Mensalidade de R$ {$valor} paga com sucesso!<br>";
+            } else {
+                echo "Saldo insuficiente para pagar mensalidade!<br>";
+            }
+        } else {
+            echo "Conta fechada, não é possível pagar mensalidade!<br>";
+        }
     }
 }   
 
