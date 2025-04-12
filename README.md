@@ -36,9 +36,13 @@ Para rodar os exercícios em seu computador, siga as instruções abaixo:
    Execute o seguinte comando no terminal:
    ```bash
    git clone git@github.com:joaokrv/phpPOO.git
-Acesse pelo navegador
-Abra o navegador e entre com o endereço:
-http://localhost/php
+   ```
+
+7. Acesse pelo navegador
+    Abra o seu navegador e entre com o endereço:  
+    ```text
+    http://localhost/php
+    ```
 
 ---
 
