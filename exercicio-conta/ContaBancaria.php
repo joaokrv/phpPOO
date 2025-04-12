@@ -55,15 +55,32 @@ class ContaBancaria {
 
     // Métodos
 
-    public function abrirConta($tipo) {
+    public function exibirDados() {
+        echo "--------------------------------<br>";
+        echo "Dados da conta:<br>";
+        echo "Número da conta: {$this->getNumConta()}<br>";
+        echo "Tipo da conta: {$this->getTipo()}<br>";
+        echo "Dono da conta: {$this->getDono()}<br>";
+        echo "Saldo: R$ {$this->getSaldo()}<br>";
+        echo "Status: " . ($this->getStatus() ? "Ativa" : "Inativa") . "<br>";
+        echo "--------------------------------<br>";
+    }
+
+    public function abrirConta($dono, $numConta, $tipo, $status) {
         $this->setTipo($tipo);
         $this->setStatus(true);
         if ($tipo == "CC") {
             $this->setSaldo(50);
+            $this->dono = $dono;
+            $this->numConta = $numConta;
+            $this->status = $status; 
         } elseif ($tipo == "CP") {
             $this->setSaldo(150);
-        }
-        echo "Conta de {$this->getTipo()} aberta com sucesso para {$this->getDono()}!<br>";
+            $this->dono = $dono;
+            $this->numConta = $numConta;
+            $this->status = $status;
+        } echo "Conta de {$this->getTipo()} aberta com sucesso para {$this->getDono()}!<br>";
+
     }
 
     public function fecharConta() {
@@ -94,7 +111,7 @@ class ContaBancaria {
         if ($this->getStatus() == true) {
             if ($this->getSaldo() > 0) {
                 $this->setSaldo($this->getSaldo() - $valor);
-                echo "Saque de {$valor} realizado com sucesso!<br>";
+                echo "Saque de R$ {$valor} realizado com sucesso!<br>";
             } else {
                 echo "Saldo insuficiente para saque!<br>";
             }
