@@ -1,57 +1,60 @@
 # 💰 Exercício — Classe Conta Bancária
 
-Este exercício tem como objetivo praticar os fundamentos da **Programação Orientada a Objetos (POO)** em PHP, por meio da criação de uma classe `ContaBanco` que simula as funcionalidades básicas de uma conta bancária, como depósito, saque e pagamento de mensalidade, associando um **cliente** a cada conta.
+Este exercício tem como objetivo praticar os fundamentos da **Programação Orientada a Objetos (POO)** em PHP, por meio da criação de uma classe `ContaBancaria` que simula as funcionalidades básicas de uma conta bancária, como depósito, saque e pagamento de mensalidade, associando um **cliente** a cada conta.
 
 ---
 
 ## 📌 Descrição
 
-Neste exercício, foram criadas duas classes principais: 
+Neste exercício, foram criadas duas classes principais:
 
-### 🧑‍💼 **Classe Cliente**
-A **classe `Cliente`** tem como atributos:
+### 🧑‍💼 Classe `Cliente`
+
+A classe `Cliente` possui os seguintes atributos:
 
 - `nome`
 - `cpf`
 - `telefone`
 
-Ela também contém **getters e setters** para acessar e modificar esses atributos, permitindo o controle de dados pessoais de um cliente.
+Ela também contém **getters e setters** para acessar e modificar esses atributos, permitindo o controle dos dados pessoais de um cliente.
 
-### 💳 **Classe ContaBancaria**
-A **classe `ContaBancaria`** possui os seguintes atributos:
+### 💳 Classe `ContaBancaria`
 
-- `numConta` (número da conta bancária)
-- `tipo` (tipo da conta: corrente ou poupança)
-- `dono` (objeto da classe `Cliente` que representa o titular da conta)
-- `saldo` (saldo da conta)
-- `status` (indica se a conta está ativa ou fechada)
+A classe `ContaBancaria` possui os seguintes atributos:
 
-Além disso, a classe `ContaBancaria` contém métodos para:
+- `numConta` — número da conta bancária  
+- `tipo` — tipo da conta (corrente ou poupança)  
+- `dono` — objeto da classe `Cliente` que representa o titular  
+- `saldo` — valor atual disponível  
+- `status` — indica se a conta está ativa ou encerrada  
 
-- **Abrir Conta**: Define o tipo da conta (CC ou CP), o saldo inicial (50 para contas correntes, 150 para poupanças) e o status da conta.
-- **Fechar Conta**: Permite o fechamento da conta, desde que o saldo seja zero.
-- **Depositar**: Adiciona valor ao saldo da conta.
-- **Sacar**: Retira valor do saldo, se houver saldo suficiente.
-- **Pagar Mensalidade**: Deduz o valor da mensalidade, dependendo do tipo da conta.
+Além disso, inclui métodos para:
+
+- **Abrir conta** — define o tipo da conta e saldo inicial (R$50 para CC, R$150 para CP)  
+- **Fechar conta** — permite encerrar apenas contas com saldo zerado  
+- **Depositar** — adiciona um valor ao saldo  
+- **Sacar** — retira um valor do saldo, se houver fundos  
+- **Pagar mensalidade** — desconto mensal conforme o tipo de conta  
 
 ---
 
 ## 🧠 O que foi aprendido
 
-✔️ Como declarar classes em PHP  
-✔️ Atributos e métodos, incluindo **getters** e **setters**  
-✔️ Visibilidade de atributos e métodos (`public`, `private`, `protected`)  
-✔️ Como instanciar objetos e interagir entre classes  
-✔️ Lógica de controle de saldo e operações bancárias  
+✔️ Criação de classes e objetos em PHP  
+✔️ Uso de visibilidade (`public`, `private`, `protected`)  
+✔️ Getters e setters para acesso controlado  
+✔️ Métodos construtores e manipulação de atributos  
+✔️ Encapsulamento e interação entre objetos  
 
 ---
 
-## 📂 Estrutura
+## 📁 Estrutura de Arquivos
 
 exercicio-conta/  
 ├── index.php # Arquivo principal para execução do exercício  
 ├── ContaBancaria.php # Classe que define a conta bancária e suas operações  
-├── Cliente.php # Classe que representa o cliente da conta
+├── Cliente.php # Classe que representa o cliente da conta  
+├── style.css # Estilo escuro e moderno para apresentação
 
 ---
 

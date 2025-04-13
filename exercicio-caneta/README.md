@@ -43,19 +43,22 @@ A ideia é simular o comportamento de uma caneta de forma orientada a objetos, p
 
 exercicio-caneta/  
 ├── index.php  
-├── Caneta.php
+├── Caneta.php  
+├── style.css  # Arquivo de estilo
 
 ---
 
 ## ▶️ Como executar
 
 1. Certifique-se de ter o PHP instalado em sua máquina.
+
 2. Navegue até a pasta do exercício:
 
 ```bash
 cd phpPOO/exercicio-caneta
 ```
-Execute o script:
+
+3. Execute o script:
 
 ```bash
 php index.php
