@@ -1,0 +1,87 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+    padding: 40px 20px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #81C784;
+    margin-bottom: 40px;
+}
+
+/* Container central */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #3e3e3e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Cartão do lutador */
+.lutador-card {
+    background-color: #444;
+    border: 2px solid #81C784;
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.lutador-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+}
+
+.lutador-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.avaliacao {
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1em;
+    display: inline-block;
+}
+
+.nota-S {
+    background-color: #ffd700; /* dourado */
+    color: #333;
+    border: 2px solid #bfa100;
+}
+
+.nota-A {
+    background-color: #4caf50; /* verde */
+    border: 2px solid #3e8e41;
+}
+
+.nota-B {
+    background-color: #2196f3; /* azul */
+    border: 2px solid #0b7dda;
+}
+
+.nota-C {
+    background-color: #ff9800; /* laranja */
+    border: 2px solid #e08e00;
+}
+
+.nota-D {
+    background-color: #f44336; /* vermelho */
+    border: 2px solid #d32f2f;
+}
