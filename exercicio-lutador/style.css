@@ -51,28 +51,37 @@ h1 {
     margin-bottom: 8px;
 }
 
-/* Status final */
-.status-card {
-    background-color: #2e2e2e;
-    border-left: 5px solid #81C784;
-    padding: 20px;
-    margin-top: 20px;
-    font-style: italic;
-    color: #bde5bd;
-}
-
-/* Botões (se houver no futuro) */
-button {
-    background-color: #81C784;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 8px;
-    color: #2e2e2e;
+.avaliacao {
     font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1em;
+    display: inline-block;
 }
 
-button:hover {
-    background-color: #66bb6a;
+.nota-S {
+    background-color: #ffd700; /* dourado */
+    color: #333;
+    border: 2px solid #bfa100;
+}
+
+.nota-A {
+    background-color: #4caf50; /* verde */
+    border: 2px solid #3e8e41;
+}
+
+.nota-B {
+    background-color: #2196f3; /* azul */
+    border: 2px solid #0b7dda;
+}
+
+.nota-C {
+    background-color: #ff9800; /* laranja */
+    border: 2px solid #e08e00;
+}
+
+.nota-D {
+    background-color: #f44336; /* vermelho */
+    border: 2px solid #d32f2f;
 }

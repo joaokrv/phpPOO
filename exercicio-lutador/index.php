@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Lutadores</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo de estilo CSS -->
 </head>
 
 <body>
@@ -12,21 +12,33 @@
     <div class="container">
 
         <?php
+        // Importa a classe Lutador
         require_once 'Lutador.php';
 
-        $lutador1 = new Lutador("Carlos Silva", 28, "Brasil", 1.75, 75.5);
+        // Criação do primeiro lutador e definição de suas vitórias, derrotas e empates
+        $lutador1 = new Lutador("Carlos Silva", "Brasil", 28, 1.75, 75.5);
         $lutador1->setVitorias(10);
-        $lutador1->setDerrotas(2);
+        $lutador1->setDerrotas(3);
         $lutador1->setEmpates(1);
 
-        echo '<div class="lutador-card">';
-        echo '<h2>' . $lutador1->getNome() . '</h2>';
-        $lutador1->apresentar();
+        // Exibe a apresentação do lutador1 e seu status
+        echo $lutador1->apresentar();
+        echo '<div class="status-card">';
+        $lutador1->status(); // Exibe status do lutador
         echo '</div>';
 
+        // Criação do segundo lutador com suas informações
+        $lutador2 = new Lutador("John Doe", "EUA", 30, 1.80, 85.0);
+        $lutador2->setVitorias(15);
+        $lutador2->setDerrotas(5);
+        $lutador2->setEmpates(2);
+
+        // Exibe a apresentação do lutador2 e seu status
+        echo $lutador2->apresentar();
         echo '<div class="status-card">';
-        $lutador1->status();
+        $lutador2->status(); // Exibe status do lutador
         echo '</div>';
+
         ?>
 
     </div>
