@@ -4,9 +4,10 @@ Repositório dedicado à prática de Programação Orientada a Objetos (POO) em 
 
 ## 🚀 Tecnologias Utilizadas
 
-- PHP
-- HTML
-- Servidor local (XAMPP, WAMP ou outro)
+- **PHP**: A principal linguagem de desenvolvimento, usada para implementar os exercícios e criar as classes com comportamento orientado a objetos.
+- **HTML**: Utilizado para criar a estrutura básica das páginas, exibindo as informações dos objetos manipulados.
+- **Servidor Local (XAMPP, WAMP ou outro)**: Utilizado para executar o PHP localmente.
+- **CSS**: Aplicado para estilizar as páginas e melhorar a interface de usuário, criando um layout limpo e agradável.
 
 ## 📌 Como executar os exercícios localmente
 
