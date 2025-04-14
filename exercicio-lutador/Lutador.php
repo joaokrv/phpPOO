@@ -66,7 +66,7 @@
         public function getCategoria() {
             return $this->categoria;
         }
-        private function setCategoria() {
+        public function setCategoria() {
             // Define a categoria com base no peso
             if ($this->peso < 52.2) {
                 $this->categoria = "Inválido";
@@ -109,11 +109,11 @@
             $d = $this->getDerrotas();
         
             // Avaliação baseada no número de vitórias e derrotas
-            if ($v > 20 && $d <= 3) return 'S';
-            if ($v > 15 && $d <= 5) return 'A';
-            if ($v > $d) return 'B';
-            if ($v == $d) return 'C';
-            return 'D';
+            if ($v > 20 && $d <= 3) return 'S'; // Avaliação S para ótimos lutadores
+            if ($v > 15 && $d <= 5) return 'A'; // Avaliação A para bons lutadores
+            if ($v > $d) return 'B'; // Avaliação B para lutadores com mais vitórias que derrotas
+            if ($v == $d) return 'C'; // Avaliação C para lutadores com número igual de vitórias e derrotas
+            return 'D'; // Avaliação D para lutadores com mais derrotas que vitórias
         }
         
         // Método público para apresentar informações do lutador
