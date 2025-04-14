@@ -1,6 +1,6 @@
 # 🥊 Exercício: Projeto Lutadores
 
-Este exercício simula o gerenciamento de informações de lutadores utilizando conceitos de Programação Orientada a Objetos em PHP. O projeto envolve o uso de uma classe `Lutador` para armazenar dados sobre lutadores, como nome, idade, vitórias, derrotas, e calcular uma avaliação de desempenho.
+Este exercício simula o gerenciamento de informações de lutadores utilizando conceitos de Programação Orientada a Objetos em PHP. O projeto envolve o uso de uma classe `Lutador` para armazenar dados sobre lutadores, como nome, idade, vitórias, derrotas, e calcular uma avaliação de desempenho. Além disso, há uma classe `Config` para configurar os lutadores e uma classe `Luta` para simular lutas entre eles.
 
 ---
 
@@ -11,14 +11,18 @@ Este exercício simula o gerenciamento de informações de lutadores utilizando 
 - Estrutura condicional para avaliação de desempenho
 - Interação entre PHP e HTML para exibição de dados
 - Estilo visual com CSS para apresentação dos dados
+- Manipulação de formulários em PHP
+- Simulação de lutas entre lutadores
 
 ---
 
 ## 📄 Estrutura dos arquivos
 
 - `Lutador.php`: Define a classe `Lutador`, com atributos e métodos para manipular dados dos lutadores.
-- `index.php`: Arquivo principal que instancia objetos `Lutador`, exibe suas informações e calculam sua avaliação de desempenho.
-- `style.css`: Arquivo de estilo para a formatação visual das informações dos lutadores.
+- `Config.php`: Define a classe `Config`, que cria e armazena os lutadores no sistema.
+- `Luta.php`: Define a classe `Luta`, que simula a luta entre dois lutadores.
+- `index.php`: Arquivo principal que instancia objetos `Lutador`, exibe suas informações, permite marcar uma luta e calcula o resultado.
+- `style.css`: Arquivo de estilo para a formatação visual das informações dos lutadores e da luta.
 
 ---
 
@@ -27,15 +31,15 @@ Este exercício simula o gerenciamento de informações de lutadores utilizando 
 Ao acessar o `index.php`, o navegador exibirá as informações dos lutadores, como nome, idade, vitórias, derrotas, e avaliação (S, A, B, C ou D), de acordo com seu desempenho:
 
 - Exibe a ficha completa do lutador.
-- Calcula a avaliação baseada em vitórias e derrotas.
-- Aplica um estilo visual com cores para cada avaliação.
+- Permite marcar uma luta entre dois lutadores.
+- Calcula o resultado da luta e exibe o vencedor ou empate.
+- Aplica um estilo visual com cores para cada avaliação e resultado da luta.
 
 Exemplo básico de como utilizar a classe `Lutador`:
 
 ```php
 <?php
 require_once 'Lutador.php';
-
 
 // Criando uma instância de lutador
 $lutador1 = new Lutador("Carlos Silva", "Brasil", 28, 1.75, 75.5);
@@ -65,12 +69,12 @@ echo $lutador1->apresentar();
 
 4. **Coloque os arquivos no diretório do servidor local**  
    Exemplo com XAMPP:  
-   `C:\xampp\htdocs\projeto-lutadores`
+   `C:\xampp\htdocs\exercicio-lutador`
 
 5. **Inicie o Apache no XAMPP**
 
 6. **Acesse no navegador:**  
-   `http://localhost/projeto-lutadores`
+   `http://localhost/php/phpPOO/exercicio-lutador`
 
 ---
 
