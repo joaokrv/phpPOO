@@ -61,6 +61,11 @@ exercicio-conta/
 ## ▶️ Como executar
 
 1. Certifique-se de ter o PHP instalado em sua máquina.
+Digite no terminal:
+```bash
+php -v
+```
+
 2. Navegue até a pasta do exercício:
 
 ```bash

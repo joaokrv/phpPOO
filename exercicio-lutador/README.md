@@ -61,6 +61,10 @@ echo $lutador1->apresentar();
    - [WAMP](https://www.wampserver.com/en/)
 
 2. **Verifique se o PHP está instalado**
+   Certifique-se de que o PHP está instalado corretamente pelo terminal digitando:
+   ```bash
+   php -v
+   ```
 
 3. **Escolha um editor de código**  
    - [Visual Studio Code](https://code.visualstudio.com/) (recomendado)  
@@ -80,4 +84,4 @@ echo $lutador1->apresentar();
 
 ## 👨‍💻 Autor
 
-Desenvolvido por João Victor — baseado nos exercícios do [Curso em Vídeo - PHP](https://www.youtube.com/playlist?list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_)
+Desenvolvido por João Victor — baseado nos exercícios do [Curso em Vídeo - PHP](https://www.cursoemvideo.com/curso/php-poo/)
