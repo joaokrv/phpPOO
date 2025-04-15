@@ -60,6 +60,13 @@ echo $p1->apresentar();
 
 ---
 
+## 📷 Exemplo de saída
+
+![RESULTADO](imagens/image.png)
+
+![RESULTADO](imagens/Captura%20de%20tela%202025-04-15%20181429.jpg)
+---
+
 ## 📌 Como executar localmente
 
 1. **Instale um servidor local**  
