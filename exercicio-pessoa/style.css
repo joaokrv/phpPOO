@@ -1,0 +1,141 @@
+/* Reset de margin e padding para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 20px;
+}
+
+/* Container principal */
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Títulos principais */
+h1 {
+    font-size: 2.5rem;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Seções */
+.section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #2c2c2c;
+    border-left: 5px solid #4CAF50;
+    border-radius: 8px;
+}
+
+/* Subtítulo dentro das seções */
+.section h2 {
+    font-size: 1.6rem;
+    color: #14f0e5;
+}
+
+/* Estilo das informações de status */
+.status-item {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 8px;
+    color: #f5f5f5;
+}
+
+.status-item strong {
+    font-weight: bold;
+    color: #b3b3b3; /* Cor das labels em negrito */
+}
+
+/* Para cada tipo de pessoa, definir cores diferentes */
+.aluno .status-item {
+    border-left: 5px solid #2196F3; /* Azul */
+}
+
+.professor .status-item {
+    border-left: 5px solid #FF9800; /* Laranja */
+}
+
+.funcionario .status-item {
+    border-left: 5px solid #9C27B0; /* Roxo */
+}
+
+/* Estilo dos métodos */
+.method {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #444;
+    border-radius: 8px;
+    border-left: 5px solid #4cafaa;
+    color: #e0e0e0;
+    font-size: 1.2rem;
+}
+
+/* Título dos métodos */
+.method h3 {
+    font-size: 1.4rem;
+    color: #14f0e5; /* Azul claro para o título dos métodos */
+    margin-bottom: 10px;
+}
+
+.method strong {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #14f0e5; /* Negrito para destacar os nomes dos métodos */
+}
+
+/* Estilo para cada ação dos métodos */
+.action {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #e0e0e0;
+}
+
+.action.success {
+    color: #43c41c; /* Verde para ações bem-sucedidas */
+}
+
+.action.error {
+    color: #ff3b3b; /* Vermelho para ações com erro ou cancelamento */
+}
+
+/* Links, se houver, para ações */
+a {
+    color: #43c41c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
