@@ -104,12 +104,12 @@ $visitante->apresentar();
 
 4. **Coloque os arquivos no diretório do servidor local**  
    Exemplo com XAMPP:  
-   `C:\xampp\htdocs\exercicio-lutador`
+   `C:\xampp\htdocs\exercicio-aluno`
 
 5. **Inicie o Apache no XAMPP**
 
 6. **Acesse no navegador:**  
-   `http://localhost/php/phpPOO/exercicio-lutador`
+   `http://localhost/php/phpPOO/exercicio-aluno`
 
 ---
 

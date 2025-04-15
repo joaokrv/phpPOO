@@ -79,12 +79,12 @@ $controle->abrirMenu();
 
 4. **Coloque os arquivos no diretório do servidor local**  
    Exemplo com XAMPP:  
-   `C:\xampp\htdocs\projeto-controle-remoto`
+   `C:\xampp\htdocs\exercicio-controle`
 
 5. **Inicie o Apache no XAMPP**
 
 6. **Acesse no navegador:**  
-   `http://localhost/projeto-controle-remoto`
+   `http://localhost/exercicio-controle`
 
 ---
 
