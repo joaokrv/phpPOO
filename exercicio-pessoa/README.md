@@ -39,13 +39,14 @@ Ao acessar o `index.php` no navegador, você verá seções separadas para:
 Cada seção exibe os dados da pessoa com **espaçamento, organização e cores específicas**, além de mensagens personalizadas para os métodos executados.
 
 Exemplo de saída:
-
+```text
 Nome: João  
 Idade: 20  
 Sexo: Masculino  
 Matrícula: 12345  
 Curso: Engenharia  
 João está estudando no curso de Engenharia.
+```
 
 ---
 

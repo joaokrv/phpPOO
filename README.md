@@ -1,13 +1,51 @@
-## 🧠 PHP POO
-Repositório dedicado à prática de Programação Orientada a Objetos (POO) em PHP, com exercícios baseados no curso do [Curso em Vídeo](https://www.cursoemvideo.com/curso/php-poo/) ministrado pelo professor Gustavo Guanabara. 
+# 🧠 PHP POO
 
+Repositório dedicado à prática de **Programação Orientada a Objetos (POO) com PHP**, com exercícios baseados no curso do [Curso em Vídeo](https://www.cursoemvideo.com/curso/php-poo/) ministrado pelo professor **Gustavo Guanabara**.
 
-## 🚀 Tecnologias Utilizadas
+---
 
-- **PHP**: A principal linguagem de desenvolvimento, usada para implementar os exercícios e criar as classes com comportamento orientado a objetos.
-- **HTML**: Utilizado para criar a estrutura básica das páginas, exibindo as informações dos objetos manipulados.
-- **Servidor Local (XAMPP, WAMP ou outro)**: Utilizado para executar o PHP localmente.
-- **CSS**: Aplicado para estilizar as páginas e melhorar a interface de usuário, criando um layout limpo e agradável.
+## 🚀 Tecnologias utilizadas
+
+- **PHP 8+** – linguagem principal dos exercícios
+- **HTML5** – estruturação das páginas
+- **CSS3** – estilização das interfaces (tema escuro e moderno)
+- **Servidor local** – XAMPP, WAMP ou similar para rodar os arquivos PHP
+
+---
+
+## 📁 Estrutura do projeto
+
+```bash
+phpPOO/
+├── exercicio-caneta/
+│   └── index.php
+├── exercicio-conta/
+│   └── index.php
+├── exercicio-lutador/
+│   └── index.php
+├── LICENSE
+└── README.md
+```
+Cada pasta contém um exercício independente, com seu respectivo código, classes, e README explicativo.
+
+## 📚 Conceitos abordados
+Este projeto tem como objetivo consolidar os conceitos de POO em PHP, abordando temas como:
+
+- ✅ Classes e Objetos
+
+- 🔒 Encapsulamento
+
+- 🧬 Herança
+
+- 🔁 Polimorfismo
+
+- 🛠️ Métodos Mágicos
+
+- 🔗 Relacionamento entre classes
+
+- 🧪 Simulações práticas com HTML e CSS
+
+---
 
 ## 📌 Como executar os exercícios localmente
 
@@ -45,67 +83,14 @@ Para rodar os exercícios em seu computador, siga as instruções abaixo:
     http://localhost/php
     ```
 
----
-
-## 📚 Sobre
-Este projeto tem como objetivo consolidar os conceitos de POO em PHP, abordando temas como:
-
-- Classes e Objetos
-
-- Encapsulamento
-
-- Herança
-
-- Polimorfismo
-
-- Métodos Especiais
-
-- Relacionamento entre Classes
-
----
-
-## 🧪 Estrutura do Projeto
-O repositório está organizado da seguinte forma:
-
-```pgsql
-phpPOO/
-├── exercicio-caneta/
-│   └── index.php
-├── exercicio-conta/
-│   └── index.php  
-├── exercicio-.../
-│   └── index.php
-├── LICENSE
-└── README.md
-```
-Cada pasta contém um exercício específico, com seu respectivo código-fonte.
-
----
-
-## 🚀 Como Executar
-Para rodar os exercícios localmente:
-
-1. Certifique-se de ter o PHP instalado em sua máquina.
-
-2. Clone este repositório:
-```bash
-git clone git@github.com:joaokrv/phpPOO.git
-```
-3. Navegue até o diretório do exercício desejado:
-```bash
-cd phpPOO/exercicio-caneta
-```
-4. Execute o arquivo PHP:
-```bash
-php index.php
-```
-
----
 
 ## 📄 Licença
 Este projeto está licenciado sob a [MIT License](https://github.com/joaokrv/phpPOO/blob/main/LICENSE).
 
----
 
-## 🧑‍💻 Autor
-- João Victor - [GitHub](https://github.com/joaokrv)
+## 🧑‍💻 Autor  
+
+Desenvolvido por **João Victor**
+
+ - 📌 GitHub: [@joaokrv](https://github.com/joaokrv)  
+ - 🎓 Baseado nos exercícios do [Curso em Vídeo - PHP POO](https://www.cursoemvideo.com/curso/php-poo/)
