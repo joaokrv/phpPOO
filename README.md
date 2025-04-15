@@ -6,9 +6,9 @@ Repositório dedicado à prática de **Programação Orientada a Objetos (POO) c
 
 ## 🚀 Tecnologias utilizadas
 
-- **PHP 8+** – linguagem principal dos exercícios
-- **HTML5** – estruturação das páginas
-- **CSS3** – estilização das interfaces (tema escuro e moderno)
+- **PHP 8+** – Linguagem principal dos exercícios
+- **HTML5** – Estruturação das páginas
+- **CSS3** – Estilização das interfaces (tema escuro e moderno)
 - **Servidor local** – XAMPP, WAMP ou similar para rodar os arquivos PHP
 
 ---
