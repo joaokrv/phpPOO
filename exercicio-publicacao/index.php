@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <header>
+        <h1>📚 Sistema de Publicação</h1>
+    </header>
     <main>
         <?php 
             // Incluindo os arquivos necessários

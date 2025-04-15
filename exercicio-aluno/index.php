@@ -16,7 +16,6 @@
     <main>
         <section>
             <h2>Dados dos Alunos</h2>
-
             <div class="alunos-container">
                 <div class="aluno-card">
                     <?php
@@ -30,7 +29,6 @@
                         $aluno->pagarMensalidade();
                     ?>
                 </div>
-
                 <div class="aluno-card">
                     <?php
                         $tecnico = new Tecnico("Maria", 22, "Feminino", "67890", "Informática", "123456789");
@@ -39,7 +37,6 @@
                         $tecnico->praticar();
                     ?>
                 </div>
-
                 <div class="aluno-card">
                     <?php
                         $bolsista = new Bolsista("Ana", 19, "Feminino", "54321", "Biologia", 50);

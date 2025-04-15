@@ -1,0 +1,115 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #f5f5f5;
+}
+
+h2, h3 {
+    color: #f5f5f5;
+    margin: 15px 0;
+}
+
+h2 {
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+}
+
+/* Estilo para as seções principais */
+section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+/* Macro-bloco para vídeos */
+.macro-block-videos {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Macro-bloco para inscritos */
+.macro-block-inscritos {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Cards para vídeos */
+.video-card {
+    background-color: #444;
+    padding: 15px;
+    margin: 10px;
+    width: 48%;
+    border-radius: 8px;
+    border-left: 5px solid #22a573;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.video-card p {
+    margin: 10px 0;
+}
+
+/* Cards para inscritos */
+.inscrito-card {
+    background-color: #444;
+    padding: 15px;
+    margin: 10px;
+    width: 30%;
+    border-radius: 8px;
+    border-left: 5px solid #8022a5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.inscrito-card p {
+    margin: 10px 0;
+}
+
+/* Caixa para os vídeos */
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Caixa para os inscritos */
+.inscritos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+    }
+
+    .video-card, .inscrito-card {
+        width: 100%;
+    }
+}
